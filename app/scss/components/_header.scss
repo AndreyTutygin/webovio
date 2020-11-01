@@ -1,1 +1,19 @@
-//
+.header {
+    position: absolute;
+    padding: 24px 0;
+    width: 100%;
+    // background-color: rgba(#000, 0.5);
+
+    &__container {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+}
+
+.logo {
+    &__svg {
+        width: 258px;
+        height: 40px;
+    }
+}
