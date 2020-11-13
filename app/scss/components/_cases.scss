@@ -1,0 +1,113 @@
+.cases {
+    padding: 150px 0 0;
+
+    &__container {
+        border-bottom: 1px solid rgba(33, 56, 66, 0.095);
+        padding-bottom: 150px;
+    }
+
+    &__heading {
+        display: flex;
+        align-items: center;
+    }
+
+    &__title {
+        max-width: 325px;
+        line-height: 52px;
+    }
+
+    &__parag {
+        margin: 0 0 0 133px;
+        max-width: 518px;
+        line-height: 26px;
+    }
+
+    &__list {
+        position: relative;
+        display: flex;
+        justify-content: space-between;
+        margin: 188px 0 0;
+    }
+
+    &__img {
+        position: absolute;
+        left: -165px;
+        top: -84px;
+        width: 735px;
+        height: 550px;
+        background-image: url("../img/cases__img1.jpg");
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+}
+
+.review {
+    position: absolute;
+    left: 158px;
+    top: 288px;
+    border-radius: 8px;
+    padding: 30px;
+    max-width: 453px;
+    box-shadow: 50px 50px 100px rgba(0, 0, 0, 0.14);
+    background-color: #fff;
+
+    &__parag {
+        font-style: italic;
+        line-height: 26px;
+        color: $mainColor;
+    }
+}
+
+.author {
+    display: flex;
+    align-items: center;
+    margin: 32px 0 0;
+
+    &__ava {
+        width: 46px;
+        height: 46px;
+        background-image: url("../img/author__ava1.jpg");
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+
+    &__desc {
+        display: flex;
+        flex-direction: column;
+        margin: 0 0 0 14px;
+    }
+
+    &__name {
+        font-weight: 700;
+        color: $mainColor;
+    }
+
+    &__position {
+        margin: 7px 0 0;
+        font-size: 14px;
+        color: #152934;
+    }
+}
+
+.see-txt {
+    margin: 0 22px 0 0;
+    max-width: 421px;
+
+    &__parag {
+        line-height: 26px;
+
+        &:nth-child(2) {
+            margin: 34px 0 0;
+        }
+
+        &:nth-child(3) {
+            margin: 24px 0 0;
+        }
+    }
+
+    &__btn {
+        margin: 93px 0 0;
+    }
+}

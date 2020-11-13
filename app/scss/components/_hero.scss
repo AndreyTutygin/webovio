@@ -32,16 +32,15 @@
 
 .title {
     font-weight: 700;
+    font-size: 36px;
+    line-height: 46px;
+    color: $mainColor;
 
     &_size {
         &_m {
             font-size: 60px;
             line-height: 74px;
-        }
-
-        &_s {
-            font-size: 36px;
-            line-height: 46px;
+            color: #fff;
         }
     }
 }
@@ -57,14 +56,12 @@
     &:hover {
         color: $hoverColor;
     }
+}
 
-    &_color {
-        &_revers {
-            color: $hoverColor;
+.btn_color_revers {
+    color: $hoverColor;
 
-            &:hover {
-                color: $btnColor;
-            }
-        }
+    &:hover {
+        color: $btnColor;
     }
 }
