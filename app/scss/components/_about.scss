@@ -1,4 +1,90 @@
 .about {
-    padding: 200px;
-    background-color: beige;
+    padding: 248px 0 0;
+
+    &__container {
+        border-bottom: 1px solid rgba(33, 56, 66, 0.095);
+        padding-bottom: 150px;
+    }
+
+    &__list {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &__item {
+        &:first-child {
+            max-width: 470px;
+        }
+    }
+
+    &__overhead {
+        font-size: 14px;
+        color: $mainColor;
+    }
+
+    &__title {
+        margin: 29px 0 0;
+        color: $mainColor;
+    }
+
+    &__parag {
+        margin: 35px 0 0;
+        line-height: 26px;
+    }
+
+    &__btn {
+        margin: 42px 0 0;
+    }
+}
+
+.i-selection {
+    font-style: normal;
+    background-color: $i-selection;
+}
+
+.comment {
+    padding: 0 40px 60px;
+    max-width: 474px;
+    box-shadow: 0 100px 100px rgba(0, 0, 0, 0.14);
+    background-color: #fff;
+
+    &__parag {
+        font-style: italic;
+        font-size: 24px;
+        line-height: 40px;
+        color: $mainColor;
+    }
+}
+
+.pers {
+    display: flex;
+    align-items: center;
+    margin: 50px 0 0;
+
+    &__ava {
+        width: 90px;
+        height: 90px;
+        background-image: url("../img/comment__ava.jpg");
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+
+    &__desc {
+        display: flex;
+        flex-direction: column;
+        margin: 0 0 0 30px;
+    }
+
+    &__name {
+        font-weight: 700;
+        font-size: 22px;
+        line-height: 33px;
+        color: $mainColor;
+    }
+
+    &__position {
+        line-height: 24px;
+        color: #152934;
+    }
 }

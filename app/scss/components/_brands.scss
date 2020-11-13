@@ -6,8 +6,11 @@
         right: 0;
         top: -103px;
         display: flex;
+        border-radius: 2px;
         padding: 60px 0;
         width: 88.5%;
+        max-width: 1276px;
+        box-shadow: 50px 50px 100px rgba(0, 0, 0, 0.14);
         background-color: #fff;
     }
 
@@ -18,10 +21,6 @@
         background-position: center;
         background-size: cover;
         background-repeat: no-repeat;
-
-        &:not(:first-child) {
-            
-        }
 
         &:nth-child(1) {
             background-image: url("../img/brands__img1.jpg");
