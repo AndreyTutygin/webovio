@@ -1,15 +1,16 @@
 .brands {
-    position: relative;
+    &__container {
+        position: relative;
+    }
 
     &__wrap {
         position: absolute;
-        right: 0;
+        left: 30px;
         top: -103px;
         display: flex;
         border-radius: 2px;
         padding: 60px 0;
-        width: 88.5%;
-        max-width: 1276px;
+        width: 109%;
         box-shadow: 50px 50px 100px rgba(0, 0, 0, 0.14);
         background-color: #fff;
     }

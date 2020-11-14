@@ -3,7 +3,7 @@
 
     &__container {
         border-bottom: 1px solid rgba(33, 56, 66, 0.095);
-        padding-bottom: 150px;
+        padding-bottom: 266px;
     }
 
     &__heading {
@@ -22,30 +22,64 @@
         line-height: 26px;
     }
 
-    &__list {
+    &__item {
         position: relative;
         display: flex;
-        justify-content: space-between;
+        justify-content: flex-end;
         margin: 188px 0 0;
+
+        &:nth-child(2n) {
+            justify-content: flex-start;
+        }
     }
 
     &__img {
         position: absolute;
-        left: -165px;
-        top: -84px;
         width: 735px;
         height: 550px;
-        background-image: url("../img/cases__img1.jpg");
         background-position: center;
         background-size: cover;
         background-repeat: no-repeat;
+
+        &-1 {
+            left: -165px;
+            top: -84px;
+            background-image: url("../img/cases__img1.jpg");
+        }
+
+        &-2 {
+            right: -165px;
+            top: 52px;
+            background-image: url("../img/cases__img2.jpg");
+        }
+
+        &-3 {
+            left: -165px;
+            top: -28px;
+            background-image: url("../img/cases__img3.jpg");
+        }
+    }
+
+    &__review {
+        &-1 {
+            left: 158px;
+            top: 288px;
+        }
+
+        &-2 {
+            right: 157px;
+            bottom: -60px;
+        }
+
+        &-3 {
+            left: 158px;
+            top: 345px;
+        }
     }
 }
 
 .review {
     position: absolute;
-    left: 158px;
-    top: 288px;
     border-radius: 8px;
     padding: 30px;
     max-width: 453px;
@@ -67,10 +101,21 @@
     &__ava {
         width: 46px;
         height: 46px;
-        background-image: url("../img/author__ava1.jpg");
         background-position: center;
         background-size: cover;
         background-repeat: no-repeat;
+
+        &-1 {
+            background-image: url("../img/author__ava1.jpg");
+        }
+
+        &-2 {
+            background-image: url("../img/author__ava2.jpg");
+        }
+
+        &-3 {
+            background-image: url("../img/author__ava3.jpg");
+        }
     }
 
     &__desc {
@@ -92,8 +137,19 @@
 }
 
 .see-txt {
-    margin: 0 22px 0 0;
-    max-width: 421px;
+    max-width: 390px;
+
+    &-1 {
+        margin: 0 52px 0 0;
+    }
+
+    &-2 {
+        margin: 134px 0 0 8px;
+    }
+
+    &-3 {
+        margin: 54px 47px 0 0;
+    }
 
     &__parag {
         line-height: 26px;
