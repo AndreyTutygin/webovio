@@ -1,0 +1,21 @@
+.start {
+    &__container {
+        position: relative;
+    }
+
+    &__wrap {
+        position: absolute;
+        left: -135px;
+        top: -172px;
+        padding: 70px 164px;
+        width: 109%;
+        box-shadow: 50px 130px 100px rgba(0, 0, 0, 0.14);
+        background-color: #fafafa;
+    }
+
+    &__btn {
+        margin: 55px 0 0;
+        font-weight: 500;
+        text-transform: uppercase;
+    }
+}
