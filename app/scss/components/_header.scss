@@ -2,9 +2,9 @@
     position: absolute;
     padding: 24px 0;
     width: 100%;
-    // background-color: rgba(#000, 0.5);
 
     &__container {
+        position: relative;
         display: flex;
         align-items: center;
         justify-content: space-between;
@@ -15,5 +15,44 @@
     &__svg {
         width: 258px;
         height: 40px;
+    }
+}
+
+.nav {
+    position: absolute;
+    right: -100px;
+    top: -95px;
+    border-top-right-radius: 20px;
+    width: 300px;
+    text-align: center;
+    background-color: rgba(#000, 0.5);
+    opacity: 0;
+    transform: scale(0, 0);
+    transition: 0.5s;
+
+    &__item {
+        transition: 0.2s;
+    }
+
+    &__link {
+        display: block;
+        padding: 20px 0;
+        width: 100%;
+        color: #fff;
+
+        &_border {
+            border-top-right-radius: 20px;
+        }
+
+        &:hover {
+            background-color: rgba(#000, 0.4);
+        }
+    }
+
+    &_active {
+        right: 30px;
+        top: 2px;
+        opacity: 1;
+        transform: scale(1, 1);
     }
 }

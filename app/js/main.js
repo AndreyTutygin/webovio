@@ -1,3 +1,4 @@
-// import './components/burger';
+import './components/burger';
+import './components/scroll';
 
 
