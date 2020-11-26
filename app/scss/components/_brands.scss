@@ -17,7 +17,7 @@
 
     &__img {
         margin: 0 0 0 65px;
-        width: 156px;
+        width: 157px;
         height: 113px;
         background-position: center;
         background-size: cover;
@@ -41,6 +41,36 @@
 
         &:nth-child(5) {
             background-image: url("../img/brands__img5.jpg");
+        }
+    }
+
+    @include media(1170) {
+        &__wrap {
+            left: 0;
+            flex-flow: row wrap;
+            justify-content: space-between;
+            padding: 30px;
+            width: 100%;
+        }
+
+        &__img {
+            margin: 0;
+        }
+    }
+
+    @include media(950) {
+        &__wrap {
+            top: -50px;
+            justify-content: space-evenly;
+        }
+
+        &__img {
+            width: 80px;
+            height: 40px;
+
+            &:not(:first-child) {
+                margin: 0 0 0 10px;
+            }
         }
     }
 }

@@ -34,6 +34,27 @@
     &__btn {
         margin: 42px 0 0;
     }
+
+    @include media(950) {
+        padding: 150px 0 0;
+
+        &__list {
+            align-items: flex-start;
+        }
+    }
+
+    @include media(650) {
+        &__item {
+            &:first-child {
+                max-width: 100%;
+            }
+        }
+
+        &__list {
+            flex-direction: column;
+            text-align: center;
+        }
+    }
 }
 
 .i-selection {
@@ -42,6 +63,7 @@
 }
 
 .comment {
+    margin: 0 0 0 30px;
     padding: 0 40px 60px;
     max-width: 474px;
     box-shadow: 0 100px 100px rgba(0, 0, 0, 0.14);
@@ -52,6 +74,19 @@
         font-size: 24px;
         line-height: 40px;
         color: $mainColor;
+    }
+
+    @include media(950) {
+        padding: 0 20px 40px;
+
+        &__parag {
+            font-size: 18px;
+            line-height: 24px;
+        }
+    }
+
+    @include media(650) {
+        margin: 40px auto 0;
     }
 }
 
@@ -85,5 +120,29 @@
     &__position {
         line-height: 24px;
         color: #152934;
+    }
+
+    @include media(950) {
+        &__desc {
+            margin: 0 0 0 10px;
+        }
+
+        &__name {
+            font-size: 18px;
+            line-height: 24px;
+        }
+
+        &__ava {
+            width: 50px;
+            height: 50px;
+        }
+    }
+
+    @include media(650) {
+        flex-direction: column;
+
+        &__desc {
+            margin: 10px 0 0;
+        }
     }
 }
