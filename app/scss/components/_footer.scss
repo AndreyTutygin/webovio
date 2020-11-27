@@ -37,6 +37,42 @@
         max-width: 270px;
         line-height: 26px;
     }
+
+    @include media(950) {
+        padding: 150px 0 0;
+
+        &__inf {
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+        }
+
+        &__list {
+            &:not(:first-child) {
+                margin: 30px 0 0;
+            }
+        }
+
+        &__item {
+            margin: 0;
+
+            &:first-child {
+                margin: 0 0 10px;
+            }
+        }
+
+        &__txt {
+            max-width: 100%;
+        }
+    }
+
+    @include media(650) {
+        padding: 80px 0 0;
+
+        &__inf {
+            padding: 20px 0 40px;
+        }
+    }
 }
 
 .address {
@@ -62,12 +98,44 @@
             color: #fff;
         }
     }
+
+    @include media(950) {
+        justify-content: space-evenly;
+        text-align: center;
+
+        &__list {
+            &:last-child {
+                margin: 0;
+            }
+        }
+    }
+
+    @include media(650) {
+        flex-direction: column;
+        padding: 20px 0;
+
+        &__list {
+            &:not(:first-child) {
+                margin: 20px 0 0;
+            }
+        }
+
+        &__item {
+            &:last-child {
+                margin: 10px 0 0;
+            }
+        }
+    }
 }
 
 .vertical-line {
     width: 1px;
     height: 210px;
     background-color: #5d6544;
+
+    @include media(950) {
+        display: none;
+    }
 }
 
 .email {
@@ -76,6 +144,11 @@
     font-weight: 700;
     font-size: 24px;
     color: #fff;
+
+    @include media(950) {
+        margin: 10px 0 0;
+        font-size: 18px;
+    }
 }
 
 .social {
@@ -112,6 +185,11 @@
         fill: #5e6648;
         transition: 0.2s;
     }
+
+    @include media(950) {
+        justify-content: center;
+        margin: 10px 0 0;
+    }
 }
 
 .copy {
@@ -123,5 +201,13 @@
     &__svg {
         width: 200px;
         height: 35px;
+    }
+
+    @include media(650) {
+        flex-direction: column;
+
+        &__parag {
+            margin: 20px 0 0;
+        }
     }
 }
