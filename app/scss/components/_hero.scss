@@ -73,22 +73,42 @@
 }
 
 .btn {
-    display: block;
+    display: inline-block;
     font-weight: 500;
     text-decoration: underline;
     color: $btnColor;
     transition: 0.3s;
     cursor: pointer;
 
+    &__svg {
+        margin-right: 6px;
+        width: 10px;
+        height: 10px;
+        fill: $btnColor;
+        transition: 0.3s;
+    }
+
     &:hover {
         color: $hoverColor;
+
+        .btn__svg {
+            fill: $hoverColor;
+        }
     }
 }
 
 .btn_color_revers {
     color: $hoverColor;
 
+    .btn__svg {
+        fill: $hoverColor;
+    }
+
     &:hover {
         color: $btnColor;
+
+        .btn__svg {
+            fill: $btnColor;
+        }
     }
 }
